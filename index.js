@@ -6,7 +6,9 @@ var app = new Vue({
       message: "Hello from JavaScript!",
       name: "brian",
       showInfo: true,
-      isEcoFriendly: false
+      isEcoFriendly: false,
+      fruits: ['raspberry', 'strawberry', 'cantaloupe', 'apple'],
+      newFruit: ""
     };
   },
   methods: {
@@ -26,6 +28,13 @@ var app = new Vue({
     toggleEcoFriendly: function() {
       console.log('toggling eco friendly');
       this.isEcoFriendly = !this.isEcoFriendly;
+    },
+    addFruit: function() {
+      console.log('adding fruit...')
+      console.log(this.newFruit)
+      // how can i add newFruit to the array?
+      this.fruits.push(this.newFruit);
+      this.newFruit = "";
     }
   }
 });

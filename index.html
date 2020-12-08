@@ -36,6 +36,25 @@
     <p v-bind:class="{ecoFriendly: isEcoFriendly}">This is a public service announcement</p>
 
     <button v-on:click="toggleEcoFriendly()">Make eco friendly</button>
+
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- {{ fruits }} -->
+
+    <p>Enter a new fruit here: <input type="text" v-model="newFruit"> <button v-on:click="addFruit()">Add Fruit</button></p>
+    <!-- fruits.each do |fruit| -->
+    <div v-for="fruit in fruits">
+      <p>{{ fruit }}</p>
+    </div>
   </div>
 </body>
 </html>
