@@ -6,5 +6,18 @@ var app = new Vue({
       message: "Hello from JavaScript!",
       name: "brian"
     };
+  },
+  methods: {
+    changeMessage: function() {
+      console.log('changing message...');
+      this.message = "new messaage value";
+    }
   }
 });
+
+
+// should i make future cohorts deal with the multiple apps issue?
+
+// should i explain how to combine the multiple apps before the exercise?
+
+
