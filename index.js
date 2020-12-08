@@ -5,7 +5,8 @@ var app = new Vue({
     return {
       message: "Hello from JavaScript!",
       name: "brian",
-      showInfo: true
+      showInfo: true,
+      isEcoFriendly: false
     };
   },
   methods: {
@@ -21,6 +22,10 @@ var app = new Vue({
       // } else {
       //   this.showInfo = true;
       // }
+    },
+    toggleEcoFriendly: function() {
+      console.log('toggling eco friendly');
+      this.isEcoFriendly = !this.isEcoFriendly;
     }
   }
 });
