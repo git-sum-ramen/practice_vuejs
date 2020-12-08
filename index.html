@@ -9,9 +9,13 @@
 <body>
   <h1>Hello from HTML!</h1>
   <div id="app">
-    {{ message }}
-    {{ name }}
+    <p>{{ message }}</p>
+    <h6>{{ name }}</h6>
     <p><button v-on:click="changeMessage()">Click Me</button></p>
+
+    <hr>
+
+    <p>Here is the message<input type="text" v-model="message"></p>
   </div>
 </body>
 </html>
