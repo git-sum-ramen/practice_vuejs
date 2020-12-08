@@ -16,6 +16,12 @@
     <hr>
 
     <p>Here is the message<input type="text" v-model="message"></p>
+
+    <hr>
+
+    <!-- v-if -->
+    <p v-if="showInfo">Here is some interesting information</p>
+    <button v-on:click="toggleInfo()">Toggle the info</button>
   </div>
 </body>
 </html>

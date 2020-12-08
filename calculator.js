@@ -12,11 +12,10 @@ var app = new Vue({
   methods: {
     computeSum: function() {
       console.log('computing sum..');
-      // console.log(this.number1);
-      // console.log(this.number2);
-      // console.log(this.number3);
-      console.log(parseInt(this.number1) + parseInt(this.number2) + parseInt(this.number3));
       this.sum = parseInt(this.number1) + parseInt(this.number2) + parseInt(this.number3);
+    },
+    computeDifference: function() {
+      console.log('some stuff here')
     }
   }
 });
