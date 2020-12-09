@@ -12,7 +12,11 @@
     <div id="app">
       {{ message }}
       <br>
-      {{ todos }}
+      <!-- {{ todos }} -->
+      <!-- todos.each do |todo| -->
+      <div v-for="todo in todos">
+        <h6>{{ todo.title }}</h6>
+      </div>
       <button v-on:click="getTodos()">Get Todos</button>
     </div>
   </body>

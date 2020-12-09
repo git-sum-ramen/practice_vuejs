@@ -14,5 +14,9 @@ var app = new Vue({
         this.todos = response.data;
       })
     }
+  },
+  created: function() {
+    console.log('in created...');
+    this.getTodos();
   }
 });
