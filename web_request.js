@@ -12,7 +12,7 @@ var app = new Vue({
     getData: function() {
     // HTTP.get('/user?ID=12345')
       // axios.get('https://jsonplaceholder.typicode.com/todos').then(function(response) {          
-      axios.get('https://jsonplaceholder.typicode.com/todos').then(response => {          
+      axios.post('https://jsonplaceholder.typicode.com/todos').then(response => {          
         console.log('i am on line 12')
         console.log(response);
         this.todos = response.data;
